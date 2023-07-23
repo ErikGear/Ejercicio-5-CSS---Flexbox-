@@ -1,0 +1,102 @@
+:root {
+  --rojo: #ef2b2d;
+  --blanco: #ffffff;
+  --azul: #002868;
+  --negro: #000000;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+* , *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+}
+
+.marco-bandera {
+  width: 80rem;
+  height: 60rem;
+  border: 0.1rem solid var(--negro);
+  display: flex;
+  margin: 5rem auto;
+}
+
+/*Contruyendo la parte IZQUIERDA de la bandera*/
+.parte-izquierda {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--azul);
+}
+
+.caja-superior-izquierda {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  background-color: var(--blanco);
+}
+
+.caja-inferior-izquierda {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  
+  background-color: var(--blanco);
+}
+
+.rojita-izquierda {
+    width: 90%;
+    height: 90%;
+    background-color: var(--rojo);
+}
+
+.caja-inferior-izquierda {
+    width: 90%;
+    height: 40%;
+    background-color: var(--blanco);
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Contruyendo la parte DERECHA de la bandera*/
+.parte-derecha {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: var(--azul);
+}
+
+.caja-superior-derecha {
+    width: 90%;
+    height: 40%;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.caja-inferior-derecha {
+    width: 90%;
+    height: 40%;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+
+
+.rojita-derecha {
+    width: 90%;
+    height: 90%;
+    background-color: var(--rojo);
+}
